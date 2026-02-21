@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link ,Routes,Route} from 'react-router-dom';
+import { Routes,Route,Link } from 'react-router-dom';
 import './style.css';
 import Home from './Home';
 import About from './About';
@@ -7,13 +7,16 @@ import Registration from './Registration';
 import AdminLogin from './AdminLogin';
 import ManagerLogin from './ManagerLogin';
 import CustomerLogin from './CustomerLogin';
+
+
 const MainNavBar = () => {
   return (
+    <div>
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/" className="logo-link">
-          KL  Event Management System - 30484
+            KL Event Management System - 30484
           </Link>
         </div>
         <ul className="nav-menu">
@@ -55,16 +58,18 @@ const MainNavBar = () => {
             </ul>
           </li>
         </ul>
-      </div>
+        </div>
+      </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/registration" element={<Registration />} />
-        <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/admin-login" element={<AdminLogin/>} />
         <Route path="/manager-login" element={<ManagerLogin />} />
         <Route path="/customer-login" element={<CustomerLogin />} />
       </Routes>
-    </nav>
+   </div>
+    
   );
 };
 
