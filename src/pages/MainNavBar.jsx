@@ -1,13 +1,13 @@
 import React from 'react';
 import { Routes,Route,Link } from 'react-router-dom';
-import './style.css';
+
 import Home from './Home';
 import About from './About';
 import Registration from './Registration';
 import AdminLogin from './AdminLogin';
 import ManagerLogin from './ManagerLogin';
 import CustomerLogin from './CustomerLogin';
-
+import './style.css';
 
 const MainNavBar = () => {
   return (
