@@ -15,7 +15,6 @@ export default function AddManager() {
 
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
