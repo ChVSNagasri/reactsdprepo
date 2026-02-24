@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function ViewBookingsByCustomer() {
+export default function ViewBookings() {
   const [bookings, setBookings] = useState([]);
   const [customerUsername, setCustomerUsername] = useState('');
   const [loading, setLoading] = useState(true);
